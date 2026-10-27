@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kelly&#x27;s Salon — Victoria, NL | Haircuts &amp; Styling, One-on-One Care</title>
+<meta name="description" content="Kelly&#x27;s Salon, 210 Main Road, Victoria NL: haircuts and styling with one-on-one attention. Open Tue–Sat (Thu til 9). Call (709) 596-0237.">
+<style>
+:root{--acc:#0f766e;--acctx:#fff;--ink:#22312e;--bg:#f2f7f4}
+*{box-sizing:border-box}body{margin:0;font-family:'Segoe UI',Tahoma,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+header{background:linear-gradient(150deg,#0f766e,#14b8a6);color:#fff;padding:2.4rem 1rem;text-align:center}
+h1{font-size:2.7rem;margin:.2rem 0}
+.wrap{max-width:900px;margin:0 auto;padding:1.4rem 1rem 2rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card{background:#fff;border-radius:16px;padding:1.2rem;box-shadow:0 3px 10px #0f766e1f}
+.card h3{margin:.2rem 0;color:#0f766e}
+.panel{background:#fff;border-radius:16px;padding:1.3rem;margin-top:1.2rem;box-shadow:0 3px 10px #0f766e1f}
+.cta{display:inline-block;background:#fff;color:#0f766e;padding:.8rem 1.5rem;border-radius:999px;text-decoration:none;font-weight:700}
+.foot{text-align:center;padding:1.2rem;font-size:.85rem;opacity:.75}
+
+.cform{display:grid;gap:.7rem;max-width:520px}
+.cform label{display:grid;gap:.3rem;font-size:.92rem;font-weight:600}
+.cform input,.cform select,.cform textarea{padding:.6rem .7rem;border:1px solid #0003;border-radius:8px;font:inherit;background:#fff;color:#111}
+.cform button{padding:.75rem 1rem;border:0;border-radius:8px;font:inherit;font-weight:700;cursor:pointer;background:var(--acc);color:var(--acctx,#fff)}
+.fnote{font-size:.85rem;opacity:.8}
+.fdone{font-weight:700}
+a{color:var(--acc)}
+</style>
+</head>
+<body>
+
+<header>
+  <p style="letter-spacing:.2em;font-weight:700">VICTORIA · NEWFOUNDLAND</p>
+  <h1>Kelly's Salon</h1>
+  <p>One-on-one hair care on Main Road — your stylist takes the time to do it right, for your hair.</p>
+  <p><a class="cta" href="tel:+17095960237">Call (709) 596-0237</a></p>
+  <p>Rated 4.9★ from 52 Google reviews</p>
+</header>
+<div class="wrap">
+  <div class="cards">
+    <div class="card"><h3>Cuts &amp; styling</h3><p>Haircuts and styling with real one-on-one attention — never rushed, never one-size-fits-all.</p></div>
+    <div class="card"><h3>A salon that gives back</h3><p>Every year Kelly's collects for the local food bank — bring a donation, especially kid-friendly cereal, until the first week of January.</p></div>
+    <div class="card"><h3>Easy to reach</h3><p>On Main Road in Victoria, serving Carbonear and the bay. Book by phone or through our Facebook page.</p></div>
+  </div>
+  <section class="panel">
+    <h2>Hours &amp; find us</h2>
+    <p>Tuesday – Wednesday: <strong>10 – 5</strong> · Thursday: <strong>10 – 9</strong> · Friday – Saturday: <strong>10 – 5</strong> · Sunday – Monday: closed<br>
+    210 Main Road, Victoria, NL · <a href="https://www.facebook.com/Kellys-Salon-493543227361680/">Kelly's Salon on Facebook</a></p>
+  </section>
+  <section class="panel">
+    <h2>Appointment requests</h2>
+    
+      <form class="cform" onsubmit="event.preventDefault();var r='KLS-'+Math.floor(1000+Math.random()*9000);document.getElementById('KLSref').textContent=r;document.getElementById('KLSdone').style.display='block';this.querySelector('button').disabled=true;">
+        <label>Your name<input type="text" required autocomplete="name"></label>
+        <label>Phone<input type="tel" required autocomplete="tel"></label>
+        <label>Service<select>
+          <option>Appointment request</option>
+          <option>General question</option>
+        </select></label>
+        <label>Details (optional)<textarea rows="3"></textarea></label>
+        <button type="submit">Send request</button>
+        <p class="fnote">Concept preview form — it doesn't send or store anything yet. To reach us today, please call (709) 596-0237.</p>
+        <p class="fdone" id="KLSdone" style="display:none">Reference: <strong id="KLSref"></strong> — concept only; please call to confirm.</p>
+      </form>
+  </section>
+</div>
+<footer class="foot"><p>Concept website designed for Kelly's Salon · Built by Jake Hersky — Ottawa web designer · hersky.info</p></footer>
+
+</body>
+</html>
